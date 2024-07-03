@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kirim Pesan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kirim Pesan</h1>
+        <div class="message-form">
+            <input type="text" id="nameInput" placeholder="Nama anda">
+            <textarea id="messageInput" placeholder="Tulis pesan anda di sini..."></textarea>
+            <button onclick="sendMessage()">Kirim</button>
+        </div>
+        <h2>Riwayat Pesan</h2>
+        <div id="messageHistory" class="message-history"></div>
+        <div id="loadMore">
+            <button id="loadMoreButton" onclick="loadMoreMessages()">Muat Pesan</button>
+        </div>
+    </div>
+    <div id="popup" class="popup">Pesan Anda Terkirim</div>
+    <div id="popup" class="popup">
+        Pesan Anda Telah Terkirim!
+    </div>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
